@@ -43,7 +43,9 @@ const Following = () => {
   useEffect(() => {
     if (currentUser) {
       axios
-        .get(`http://localhost:8000/api/v1/follow/following/${currentUser._id}`)
+        .get(
+          `http://localhost:8000/api/v1/follow/following/${currentUser?._id}`
+        )
         .then((response) => {
           setCurrentUserFollowings(response.data);
         });
@@ -66,6 +68,7 @@ const Following = () => {
           followings.filter((following) => following._id !== idFollowing)
         )
       );
+      await BaseAxios.get(`api/v1/follow/following/${currentUser?._id}`);
     }
     if (id !== currentUser?._id && isCurrentUserFollowing(idFollowing)) {
       await BaseAxios.delete(`/api/v1/follow/unfollow-user/${idFollowing}`);
@@ -74,7 +77,14 @@ const Following = () => {
           (following) => following._id !== idFollowing
         )
       );
-      !isCurrentUserFollowing(idFollowing);
+    }
+    if (id !== currentUser?._id && !isCurrentUserFollowing(idFollowing)) {
+      await BaseAxios.post(`api/v1/follow/follow-user`, {
+        userIdToFollow: idFollowing,
+      });
+      await BaseAxios.get(`api/v1/follow/following/${currentUser?._id}`).then(
+        (response) => setCurrentUserFollowings(response.data)
+      );
     }
   };
 

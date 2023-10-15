@@ -17,7 +17,6 @@ import {
 } from '@nestjs/common';
 
 import { FollowService } from './follow.service';
-import { Follow } from './Schemas/follow.schemas';
 
 @Controller('api/v1/follow')
 export class FollowController {
