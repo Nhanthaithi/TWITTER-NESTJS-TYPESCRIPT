@@ -1,0 +1,21 @@
+.sidebar {
+  position: sticky;
+  background-color: #1da1f2;
+  top: 0;
+}
+.sidebar .logout-button {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: calc(100% - 20px);
+}
+.menu-admin li {
+  margin-bottom: 30px !important;
+}

@@ -1,0 +1,89 @@
+
+
+/* Menu bar */
+.top-sidebar ul.list-menu-sidebar {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-sidebar ul.list-menu-sidebar > li > a.menu {
+  display: flex;
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+.top-sidebar ul.list-menu-sidebar > li > a.menu:hover {
+  background-color: rgb(245, 245, 245);
+  border-radius: 50px;
+}
+.top-sidebar ul.list-menu-sidebar > li > a.menu .icon-menu {
+  font-size: 30px;
+  margin-right: 15px;
+}
+.notification-badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+  background-color: #1da1f2;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 5px;
+  left: 25px;
+}
+
+.top-sidebar ul.list-menu-sidebar > li > a.menu .menu-title {
+  display: none;
+  font-size: 16px;
+}
+
+.top-sidebar ul.list-menu-sidebar > li .btn-tweet {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: var(--main-color);
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  /* Top-sidebar */
+  .top-sidebar {
+    width: 100%;
+  }
+
+  /* Menu bar */
+  .top-sidebar ul.list-menu-sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top-sidebar ul.list-menu-sidebar > li {
+    padding: 10px;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+
+  .top-sidebar ul.list-menu-sidebar > li > a.menu .menu-title {
+    display: inline;
+  }
+}
+
+.active {
+  font-weight: 900;
+}

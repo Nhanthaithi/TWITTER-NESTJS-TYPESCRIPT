@@ -1,0 +1,47 @@
+.manager-order {
+  flex-grow: 1;
+}
+.search-date-form {
+  max-width: 400px;
+  margin: 15px 0;
+  position: relative;
+}
+
+.search-date-form label {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.search-date-form input[type="date"],
+.search-btn {
+  padding: 10px;
+  height: 40px;
+  outline: none;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  right: -50px;
+  top: 23px;
+}
+
+.total-amount {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+table tr {
+  transition: all 0.25s;
+}
+
+table tr:hover td {
+  border: white solid 0.5px;
+}
+
+.manager-order form {
+  max-width: 500px;
+}

@@ -1,0 +1,121 @@
+.tweet {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  /* display: flex;
+    flex-direction: column; */
+  border-bottom: 0.5px solid lightgrey;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.tweet:hover {
+  background-color: rgb(239, 239, 239);
+  transition: all 0.25s;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweet-header .dropdown-tweet {
+  width: auto;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fullname {
+  font-weight: bold;
+}
+
+.timestamp {
+  margin-left: auto;
+  color: #888;
+  font-size: 14px;
+}
+
+.tweet-content {
+  margin-top: 10px;
+}
+
+/* Container styling */
+.imgs-tweets {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  gap: 10px; /* Gap between items */
+  justify-content: space-between;
+}
+
+/* Image styling */
+.tweet-image {
+  width: calc(50% - 10px); /* Default width */
+  box-sizing: border-box; /* To include padding, border, etc., in the width calculation */
+  max-height: 300px;
+  object-fit: cover;
+  border: var(--main-color) 1px solid;
+}
+
+/* If there's an odd number of images, the last image should take 100% width */
+.imgs-tweets img:nth-last-child(1):nth-child(odd) {
+  width: 100%;
+}
+
+.tweet-footer {
+  margin-top: 10px;
+  color: #888;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tweet-footer span {
+  cursor: pointer;
+}
+
+.tweet .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.tweet .dropdown-toggle1 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tweet .dropdown-menu {
+  position: absolute;
+  top: 60%;
+  right: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(201, 200, 200, 0.977);
+  padding: 5px 0;
+  z-index: 100;
+  width: 300px;
+}
+.tweet .icon-drop {
+  font-size: 17px;
+}
+
+.tweet .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 8px 15px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tweet .dropdown-item:hover {
+  background-color: #f5f5f5;
+}

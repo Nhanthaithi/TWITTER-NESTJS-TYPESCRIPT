@@ -1,0 +1,7 @@
+.right-bar {
+  flex-basis: 348px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 12px 16px;
+}

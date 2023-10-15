@@ -1,0 +1,35 @@
+.profile-info .user-imgs-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info .user-imgs-info .cover-img {
+  height: 200px;
+}
+.profile-info .user-imgs-info .avt-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 115px;
+  left: 15px;
+}
+.profile-info .user-imgs-info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-info .user-imgs-info .avt-img img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info .btn-edit-profile,
+.profile-info .btn-follow,
+.profile-info .btn-unfollow {
+  width: 150px;
+  height: auto;
+  align-self: flex-end;
+  margin: 15px;
+}

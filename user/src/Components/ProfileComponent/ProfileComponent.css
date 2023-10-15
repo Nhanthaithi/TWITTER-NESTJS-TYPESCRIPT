@@ -1,0 +1,32 @@
+.profile-content {
+  flex-grow: 1;
+  padding: 15px 10px 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.profile-content .profile-menu {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px solid lightgrey;
+  padding: 15px 0;
+}
+
+.profile-content .menu-item {
+  margin-right: 10px;
+  width: 30%;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: gray;
+  text-align: center;
+}
+
+.profile-content .menu-item:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.profile-content .menu-item.active {
+  background-color: lightgrey;
+  color: black;
+}

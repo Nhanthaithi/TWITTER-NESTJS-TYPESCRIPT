@@ -1,0 +1,211 @@
+/* Chat.css */
+
+.chat-wrapper {
+  display: flex;
+  max-height: 100vh;
+  flex-grow: 1;
+  border:#ddd 1px solid;
+  border-radius: 10px;
+  margin-top: 10px ;
+}
+
+.sidebar {
+  flex: 1;
+  border-right: 1px solid #e6e6e6;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.header {
+  /* justify-content: space-between; */
+  margin-bottom: 20px;
+}
+
+.left-icons i {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chat-wrapper .search-bar {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.chat-wrapper .search-bar i {
+  margin-right: 10px;
+}
+
+.chat-wrapper .search-bar input {
+  background-color: white;
+  outline: none;
+  padding: 10px;
+}
+
+.user-list .user {
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.user .details .name {
+  font-weight: bold;
+}
+
+.user .details .username {
+  color: #7a7a7a;
+}
+
+.empty-message {
+  text-align: center;
+  color: #7a7a7a;
+  font-style: italic;
+}
+
+.main-chat {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.chat-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.chat-header .details .name {
+  font-weight: bold;
+}
+
+.chat-header .details .username {
+  color: #7a7a7a;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages .message {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.messages .message.own {
+  background-color: #b2f2e5;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+  justify-content: flex-end;
+}
+
+.messages .message.other {
+  background-color: #f2f2f2;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.input-area i {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #e6e6e6;
+}
+
+.input-area .emoji-picker-container-chat {
+  position: absolute;
+  left: -20px;
+  bottom: 510px;
+}
+
+.input-area .send-mess-btn {
+  position: absolute;
+  right: 30px;
+}
+
+.input-area .input-with-image {
+  position: relative;
+  flex-grow: 1; /* Cho phép input chiếm đủ không gian còn lại */
+}
+
+.input-area .input-with-image input:focus-visible {
+  outline: var(--main-color) 0.5px solid;
+}
+
+.input-area .input-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Làm tròn ảnh */
+  z-index: 2;
+  border: 0.5px solid #7a7a7a;
+}
+
+.input-area .image-preview {
+  position: absolute;
+  z-index: 2;
+  top: -105px;
+}
+
+.input-area .input-with-image input {
+  position: relative;
+  width: 100%;
+}
+
+.input-area .image-preview button {
+  position: absolute;
+  top: 10px; /* Đặt nút ở góc trên bên phải của ảnh */
+  right: 0;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Làm tròn nút */
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10;
+}

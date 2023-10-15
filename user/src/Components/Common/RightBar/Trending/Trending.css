@@ -1,0 +1,38 @@
+.trending-container {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 12px 16px;
+}
+
+.trending-header {
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.trending-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  /* border-bottom: 1px solid #e1e8ed; */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.trend-item:hover {
+  background-color: #e4e4e4;
+}
+
+.trend-topic {
+  font-weight: bold;
+}
+
+.trend-tweets {
+  color: #657786;
+}

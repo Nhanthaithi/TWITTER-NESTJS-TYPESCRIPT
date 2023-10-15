@@ -1,0 +1,66 @@
+.block-container {
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 0 10px 15px;
+  margin: 15px 0;
+}
+
+.block-container .notification-menu {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px solid lightgrey;
+  padding: 15px 0;
+}
+
+.block-container .menu-item {
+  margin-right: 10px;
+  width: 30%;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: gray;
+  text-align: center;
+}
+
+.block-container .menu-item:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.block-container .menu-item.active {
+  background-color: lightgrey;
+  color: black;
+}
+
+.block-container .block {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 0.5px solid lightgrey;
+}
+
+.block-container .avatar {
+  margin-right: 15px;
+}
+
+.block-container .avatar img {
+  max-width: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.block-container .fullname {
+  font-weight: bold;
+}
+
+.block-container .date {
+  margin-left: 10px;
+  color: gray;
+}
+
+.block-container .content {
+  margin-top: 5px;
+}
+
+/* Add more custom CSS styles as needed */

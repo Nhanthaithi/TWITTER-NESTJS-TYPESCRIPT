@@ -1,0 +1,7 @@
+.custom-dropdown-content {
+  /* Sử dụng transform để điều chỉnh vị trí */
+  position: absolute;
+  top: -85px !important;
+  left: -200px !important;
+  width: 250px;
+}

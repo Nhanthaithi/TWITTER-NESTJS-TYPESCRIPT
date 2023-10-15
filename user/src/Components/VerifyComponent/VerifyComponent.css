@@ -1,0 +1,50 @@
+.verify-account {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.verify-account h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.verify-account .mb-3 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.verify-account .mb-3 .form-label {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.verify-account .mb-3 .form-control,
+.verify-account .mb-3 .form-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.verify-account .btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.verify-account .btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}

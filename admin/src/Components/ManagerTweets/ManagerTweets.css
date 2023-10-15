@@ -1,0 +1,8 @@
+.manager-tweets {
+  flex-grow: 1;
+}
+.image-tweet {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover; /* Chọn kiểu hiển thị tùy theo yêu cầu, ví dụ: cover, contain, scale-down */
+}

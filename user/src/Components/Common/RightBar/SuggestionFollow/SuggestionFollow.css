@@ -1,0 +1,38 @@
+.suggest-follow {
+  padding: 10px;
+  background-color: #f7f7f7;
+  margin: 15px 0;
+  border-radius: 10px;
+  max-height: 45%;
+  overflow-y: auto;
+}
+
+.suggest-follow .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+.suggest-follow .content:hover {
+  background-color: #e4e4e4;
+}
+
+.suggest-follow .img-avt img {
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.suggest-follow .user-name {
+  text-align: left;
+  font-size: 13px;
+}
+
+.content .follow-btn button {
+  padding: 0px 15px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+}

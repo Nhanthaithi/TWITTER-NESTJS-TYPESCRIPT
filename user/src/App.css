@@ -1,0 +1,8 @@
+:root {
+  --main-color: #1da1f2;
+  --second-color: #60a5fa;
+}
+
+* {
+  box-sizing: border-box;
+}

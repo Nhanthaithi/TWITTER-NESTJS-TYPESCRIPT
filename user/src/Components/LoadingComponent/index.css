@@ -1,0 +1,37 @@
+.wrapper-loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+}
+
+.wrapper-loading svg {
+  fill: #1da1f2;
+  width: 80px;
+}
+
+.wrapper-loading svg:first-child {
+  animation: loadingBird 0.8s ease infinite alternate-reverse;
+}
+
+.wrapper-loading svg:nth-child(2) {
+  animation: loadingBird 0.8s 0.4s ease infinite alternate-reverse;
+}
+
+.wrapper-loading svg:last-child {
+  animation: loadingBird 0.8s 0.8s ease infinite alternate-reverse;
+}
+
+@keyframes loadingBird {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}

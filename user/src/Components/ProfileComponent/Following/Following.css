@@ -1,0 +1,27 @@
+.following-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.following-component .following-user {
+  display: flex;
+  align-items: center;
+  flex-basis: 70%;
+  padding-right: 15px;
+}
+.following-component .following-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.following-component button.btn-unfollowing {
+  border: none;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+}

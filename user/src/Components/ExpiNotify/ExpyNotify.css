@@ -1,0 +1,36 @@
+.wrapper-exp {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modal-exp {
+  background-color: #fff;
+  width: 390px;
+  height: 95px;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-exp h2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-exp a {
+  display: block;
+  padding: 10px;
+  background-color: yellowgreen;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
